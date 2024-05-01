@@ -12,6 +12,7 @@
 ## How to Run
 1. Download the database file [here](https://www.kaggle.com/datasets/maltegrosse/8-m-spotify-tracks-genre-audio-features/download?datasetVersionNumber=1).
 1. Extract `archive.zip`.
+1. Create and activate a conda environment, then run `conda install -c conda-forge --file requirements.yaml`.
 1. Open `optimize_db.ipynb`. In the second cell, set `PATH_DB` to the path of the extracted database file. Save the file, run all of the cells, and wait for them to finish before closing the file. The print statements in the fourth cell provide progress feedback.
 1. Open `create_dataframe.ipynb`. In the second cell, set `PATH_DB` to the path of the extracted database file. Save the file, run all of the cells, and wait for them to finish before closing the file. This program takes much less time to finish compared to `optimize_db.ipynb`.
 1. Open `correlations.ipynb` and `visualization.ipynb`. In the second cell, set `PATH_CSV` to the path of the CSV file generated from `create_dataframe.ipynb`.
